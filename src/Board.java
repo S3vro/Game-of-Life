@@ -60,7 +60,7 @@ public final class Board {
     toolBar.add(STOP_BUTTON);
     toolBar.add(CLEAR_BUTTON);
     JPanel panel = new JPanel(new GridLayout(0, this.boardSize));
-    for (Tile[] row : tiles) {
+    for (Tile[] row : this.tiles) {
       for (Tile tile : row) {
         panel.add(tile.getButton());
       }

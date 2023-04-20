@@ -17,7 +17,7 @@ public final class Tile {
     this.button.setBackground(this.state.getColor());
     this.button.setMargin(new Insets(0,0,0,0));
     this.button.setBorder(null);
-    ImageIcon icon = new ImageIcon(new BufferedImage(size,size, BufferedImage.TYPE_INT_ARGB));
+    Icon icon = new ImageIcon(new BufferedImage(size,size, BufferedImage.TYPE_INT_ARGB));
     this.button.setIcon(icon);
     this.button.addActionListener(e -> {
       this.switchState();
